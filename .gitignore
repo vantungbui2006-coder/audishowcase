@@ -1,0 +1,22 @@
+# .gitignore — Các file/thư mục KHÔNG đẩy lên GitHub
+# Lý do từng dòng được ghi chú ngay bên cạnh.
+
+# Chứa mật khẩu Gmail App Password thật — TUYỆT ĐỐI không public
+includes/mail-config.php
+
+# Chứa mật khẩu MySQL thật (cả localhost lẫn hosting InfinityFree)
+includes/db.php
+
+# File giấy tờ khách hàng tự upload (demo) — dữ liệu người dùng, không nên public
+uploads/documents/*
+!uploads/documents/.htaccess
+
+# Ảnh xe bạn tự thêm vào — nặng, không cần thiết phải lưu trên GitHub
+# (bỏ 2 dòng dưới nếu bạn MUỐN ảnh cũng được đẩy lên cùng code)
+images/cars/*
+!images/cars/.gitkeep
+
+# File hệ điều hành/editor tự sinh ra, không liên quan tới code
+Thumbs.db
+.DS_Store
+.vscode/
